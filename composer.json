@@ -1,0 +1,53 @@
+{
+    "name": "changelog/commit-parser-conventional-gitmoji",
+    "description": "TBD",
+    "keywords": [
+        "changelog",
+        "commit",
+        "parse",
+        "git"
+    ],
+    "homepage": "https://github.com/changelog-page/commit-parser-conventional-gitmoji",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "changelog/commit-parser": "^0.1.0",
+        "illuminate/support": "^9.0",
+        "spatie/data-transfer-object": "^3.7",
+        "spatie/regex": "^3.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "pestphp/pest": "^1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Changelog\\CommitParser\\ConventionalGitmoji\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Changelog\\CommitParser\\ConventionalGitmoji\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/php-cs-fixer fix ./"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
